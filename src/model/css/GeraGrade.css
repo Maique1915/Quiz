@@ -1,0 +1,129 @@
+.MateriasFeitas-content{
+	height: 74vh;
+	min-width: 750px;
+	padding: 5px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #FFF;
+ 	overflow:auto; 
+}
+
+.MateriasFeitas-content::-webkit-scrollbar {
+	width: 1px;                /*width of the entire scrollbar */
+}
+
+.MateriasFeitas-content::-webkit-scrollbar-track {
+	background: #FFF;         /*color of the tracking area */
+}
+
+.MateriasFeitas-content::-webkit-scrollbar-thumb {
+	background-color: #333;     /*color of the scroll thumb */
+	border-radius: 20px;        /*roundness of the scroll thumb */
+	border: 3px solid #323232;   /*creates padding around scroll thumb */
+}
+
+.intervalo{
+	display: flex;
+	width: 100%;
+	height: 3vh;
+	font-size: 14px;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	color: #FFF;
+	justify-content: center;
+	text-align: center;
+	background-color: #333;
+}
+
+.intervalo:first-child{
+	background-color: #07C;	
+	color: #FFF;
+	padding: 10px;
+}
+
+.periodo-content, .buttom-content, .quer-content{
+	display: flex;
+	flex: 1;
+}
+
+.lista{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: 0 5px 50px 5px;
+	gap: 3px;
+	font-size: 14px;
+}
+
+.periodo{
+	display: flex;
+	justify-content: center;
+	background-color: #07C;
+	color: #FFF;
+	gap: 5px;
+}
+
+.as{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+}
+
+.periodo_label{
+	font-size: 15px;
+	margin: -1px 3px 0 0;
+}
+
+.periodo_input{
+	font-size: 11px;
+}
+
+.periodo:first-child{
+margin-top: 0;	
+}
+
+.buttom-content, .quer-content, .quer, .possiveis, .excluidos{
+	display: flex;
+	justify-content: center;
+}
+.buttom-content{
+	padding-top: 1vh;
+}
+.quer-content{
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 30vw;
+}
+.possiveis{
+	flex-direction: column;
+	width: 100%;
+}
+.quer-content .content{
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+}
+.quer-content div{
+	display: flex;
+	width: 100%;
+}
+
+.check{
+	float: left;
+	width: 50%;
+}
+
+.check label{
+	margin-left: 5px;
+}
+
+.seila, .seila1, .seila3,.seila2{
+	display: flex;
+	flex-direction: column; 
+	height: calc(80vh + 5px);
+}

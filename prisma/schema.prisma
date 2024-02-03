@@ -1,0 +1,125 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Definindo o modelo Curso
+model Curso {
+  id   Int    @id @default(autoincrement())
+  nome String @db.VarChar(45)
+  sigla String  @db.VarChar(10) @unique
+  materias Materia[]
+}
+
+// Definindo o modelo Grade
+model Grade {
+  materia_id Int
+  horario_id Int
+  semana_id  Int
+
+  materia Materia @relation(fields: [materia_id], references: [id])
+  horario Horario @relation(fields: [horario_id], references: [id])
+  semana  Semana  @relation(fields: [semana_id], references: [id])
+
+  @@id([materia_id, horario_id, semana_id])
+}
+
+// Definindo o modelo Horario
+model Horario {
+  id     Int     @id @default(autoincrement())
+  inicio DateTime?
+  fim    DateTime?
+  grades Grade[]
+}
+
+// Definindo o modelo Materia
+model Materia {
+  id        Int      @id @default(autoincrement())
+  periodo   Int?
+  disciplina String
+  sigla     String?
+  pratica   Int?
+  teorica   Int?
+  eletiva   Boolean
+  ativa     Boolean
+  curso_id  Int
+
+  curso Curso @relation(fields: [curso_id], references: [id])
+  ementas Ementa[]
+  grades Grade[]
+  materia_has_professores MateriaHasProfessor[]
+
+  @@index([curso_id], name: "curso_id")
+}
+
+// Definindo o modelo MateriaHasProfessor
+model MateriaHasProfessor {
+  materia_id   Int
+  professor_id Int
+
+  materia   Materia   @relation(fields: [materia_id], references: [id])
+  professor Professor @relation(fields: [professor_id], references: [id])
+
+  @@id([materia_id, professor_id])
+}
+
+// Definindo o modelo Professor
+model Professor {
+  id   Int    @id @default(autoincrement())
+  nome String
+  materia_has_professores MateriaHasProfessor[]
+}
+
+// Definindo o modelo Requisitos
+model Requisitos {
+  materia  String
+  requisito String
+  creditos Int?
+
+  @@id([materia, requisito])
+}
+
+// Definindo o modelo Semana
+model Semana {
+  id  Int    @id @default(autoincrement())
+  dia String
+  grades Grade[]
+}
+
+// Definindo o modelo Ementa
+model Ementa {
+  id        Int      @id @default(autoincrement())
+  tema      String?
+  desc      String?
+  materia_id Int
+
+  materia Materia @relation(fields: [materia_id], references: [id])
+  quizzes Quiz[]
+  @@index([materia_id], name: "materia_id")
+}
+
+// Definindo o modelo Quiz
+model Quiz {
+  id        Int     @id @default(autoincrement())
+  pergunta  String
+  certa     String
+  explica   String?
+  ementa_id Int
+  opcoes Opcao[]
+  ementa Ementa @relation(fields: [ementa_id], references: [id])
+}
+
+// Definindo o modelo Quiz
+model Opcao {
+  id        Int     @id @default(autoincrement())
+  resposta  String
+  quiz_id Int
+  quiz Quiz @relation(fields: [quiz_id], references: [id])
+}

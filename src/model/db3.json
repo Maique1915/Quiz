@@ -1,0 +1,364 @@
+[
+    {
+        "_cu": "engcomp",
+        "_pe": 2,
+        "_di": "Cálculo I",
+        "_em": {
+            "Limites": [
+                {
+                    "pe": "Calcule o limite $$$$ $$\\lim_{{x \\to 3}} (2x - 1).$$", 
+                    "op": [
+                        {"qu": "4", "re": false}, 
+                        {"qu": "5", "re": false}, 
+                        {"qu": "6", "re": false}, 
+                        {"qu": "5", "re": true}
+                    ],
+                    "res": "Para calcular o limite, substituímos $x = 3$ na expressão: $$\\lim_{{x \\to 3}} (2x - 1) = 2(3) - 1 = 5.$$"
+                }, {
+                    "pe": "Encontre o limite $$\\lim_{{h \\to 0}} \\frac{{\\sqrt{9 + h} - 3}}{{h}}.$$", 
+                    "op": [
+                        {"qu": "$0$", "re": false}, 
+                        {"qu": "$\\frac{1}{6}$", "re": true}, 
+                        {"qu": "$1$", "re": false}, 
+                        {"qu": "$\\frac{1}{3}$", "re": false}
+                    ],
+                    "res": "Se racionalizarmos a expressão, chegamos a: $$ \\lim_{{h \\to 0}} \\frac{{\\sqrt{9 + h} - 3}}{{h}} \\cdot \\frac{{\\sqrt{9 + h} + 3}}{{\\sqrt{9 + h} + 3}} = \\lim_{{h \\to 0}} \\frac{1}{{\\sqrt{9 + h} + 3}}. $$ Desta maneira, removemos do denominador o elemento que causava a indeterminação. Então, $$ \\lim_{{h \\to 0}} \\frac{1}{{\\sqrt{9 + h} + 3}} = \\lim_{{h \\to 0}} \\frac{1}{{\\sqrt{9 + (0)} + 3}} = \\frac{1}{6}. $$"
+                    }, {
+                    "pe": "Determine $$\\lim_{{x \\to 2}} \\frac{{x^2 - 4}}{{x - 2}}.$$", 
+                    "op": [
+                        {"qu": "$0$", "re": false}, 
+                        {"qu": "$2$", "re": false}, 
+                        {"qu": "$4$", "re": true}, 
+                        {"qu": "$\\infty$", "re": false}
+                    ],
+                    "res": "Simplificando a expressão, obtemos: $$\\lim_{{x \\to 2}} \\frac{{x^2 - 4}}{{x - 2}} = \\lim_{{x \\to 2}} \\frac{{(x - 2)(x + 2)}}{{x - 2}} = \\lim_{{x \\to 2}} (x + 2) = 4.$$"
+                }, {
+                    "pe": "Calcule $$\\lim_{{x \\to 0}} \\frac{{\\sin x}}{{x}}.$$", 
+                    "op": [
+                        {"qu": "$1$", "re": true}, 
+                        {"qu": "$0$", "re": false}, 
+                        {"qu": "$\\infty$", "re": false}, 
+                        {"qu": "$\\frac{1}{2}$", "re": false}
+                    ],
+                    "res": "Este é um limite fundamental em cálculo. Temos $$\\lim_{{x \\to 0}} \\frac{{\\sin x}}{{x}} = 1.$$"
+                }
+            ],
+            "teste2": [
+                {
+                    "pe": "pergunta 1", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": true}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 2", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": true}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 3", 
+                    "op": [
+                        {"qu":"opção 1", "re": true}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 4", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": true}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }
+            ]
+        }
+    }, {
+        "_cu": "engcomp",
+        "_pe": 4,
+        "_di": "Banco de Dados",
+        "_em": {
+            "teste1": [
+                {
+                    "pe": "pergunta 1", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": true}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                }, {
+                    "pe": "pergunta 2", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": true}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 3", 
+                    "op": [
+                        {"qu":"opção 1", "re": true}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 4", 
+                    "op": [
+                        {"qu":"opção 1dsad a da a da da d dad das da d a da  ad a d a d a d d ad da  da dad a das da sd a d a d a  as da  d as da  da  da  da d a d ad a dada da da sd a d a d ad as d a sd asdasdasd a sd as d as da sdas d s d as d as d as d asdas d as d as", "re": false}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": true}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }
+            ],
+            "teste2": [
+                {
+                    "pe": "pergunta 1", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": true}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 2", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": true}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 3", 
+                    "op": [
+                        {"qu":"opção 1", "re": true}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 4", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": true}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }
+            ]
+        }
+    }, {
+        "_cu": "engcomp",
+        "_pe": 4,
+        "_di": "teste",
+        "_em": {
+            "teste1": [
+                {
+                    "pe": "pergunta 1", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": true}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                }, {
+                    "pe": "pergunta 2", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": true}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 3", 
+                    "op": [
+                        {"qu":"opção 1", "re": true}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 4", 
+                    "op": [
+                        {"qu":"opção 1dsad a da a da da d dad das da d a da  ad a d a d a d d ad da  da dad a das da sd a d a d a  as da  d as da  da  da  da d a d ad a dada da da sd a d a d ad as d a sd asdasdasd a sd as d as da sdas d s d as d as d as d asdas d as d as", "re": false}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": true}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }
+            ],
+            "teste2": [
+                {
+                    "pe": "pergunta 1", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": true}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 2", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": true}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 3", 
+                    "op": [
+                        {"qu":"opção 1", "re": true}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 4", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": true}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }
+            ]
+        }
+    },
+    {
+        "_cu": "engcomp",
+        "_pe": 5,
+        "_di": "Probalidade e Estatística",
+        "_em": {
+            "teste1": [
+                {
+                    "pe": "De um baralho com 52 cartas, duas cartas são extraídas ao acaso, sem reposição, qual a probabilidade de ambas serem de copas?", 
+                    "op": [
+                        {"qu":"2.50%", "re": false}, 
+                        {"qu":"5,88%", "re": true}, 
+                        {"qu":"4.85%", "re": false}, 
+                        {"qu":"3.58%", "re": false}
+                    ],
+                    "res": "A escolha de cada par de cartas pode ocorrer duas vezes, ou seja, de ${52 \\choose 2}$ maneiras, enquanto a escolha de um par de copas ocorre de ${13 \\choose 2}$ maneiras. Portanto, a probabilidade de escolher um par de copas é dada por: $$$$ $$ P(\\text{ambas de copas}) = \\frac{{\\binom{13}{2}}}{{\\binom{52}{2}}} = \\frac{78}{1326} = \\frac{1}{17} \\approx 0.0588 \\approx 5.88\\%.$$"
+
+                }, {
+                    "pe": "Um grupo é constituido por 6 homens e 4 mulheres, 3 pessoas são ecolhidas ao acaso e sem reposição, qual a probabilidade de que ao menos duas delas sejam homens?", 
+                    "op": [
+                        {"qu":"76.19%", "re": false},
+                        {"qu":"67.33%", "re": false}, 
+                        {"qu":"50.00%", "re": false},
+                        {"qu":"66.66%", "re": true}
+                    ],
+                    "res": "Dado um grupo constituído por 6 homens e 4 mulheres, a probabilidade de escolher 3 pessoas ao acaso e sem reposição, e que ao menos duas delas sejam homens, é dada por: $$$$ $$ P(\\text{ao menos 2 homens}) = P(\\text{2 homens e 1 mulher}) + P(\\text{3 homens}) $$ $$$$ Calculando cada caso: $$$$ $$ P(\\text{2 homens e 1 mulher}) = \\frac{\\binom{6}{2} \\cdot \\binom{4}{1}}{\\binom{10}{3}} = 0.5 = 50.00\\% $$ $$$$ $$ P(\\text{3 homens}) = \\frac{\\binom{6}{3}}{\\binom{10}{3}} \\approx 0.1666 \\approx 16.66\\% $$ $$$$ Somando essas probabilidades: $$$$ $$ P(\\text{ao menos 2 homens}) \\approx 66.66\\% $$"
+                }, {
+                    "pe": "Dois dados são lançados, sabendo que a soma do dados foi 6, qual a probabilidade do primeiro dado ter sido 2?", 
+                    "op": [
+                        {"qu":"20%", "re": true},
+                        {"qu":"16%", "re": false},
+                        {"qu":"22%", "re": false},
+                        {"qu":"18%", "re": false}
+                    ],
+                    "res": "Dois dados são lançados, e sabemos que a soma dos dados é 6. A probabilidade do primeiro dado ter sido 2, dado esse evento, pode ser calculada usando a fórmula da probabilidade condicional: $$$$  $$ P(1^\\circ \\text{ dado = 2 | soma = 6}) = \\frac{P(1^\\circ \\text{ dado = 2} \\cap \\text{soma = 6})}{P(\\text{soma = 6})} = \\frac{n(1^\\circ \\text{ dado = 2} \\cap \\text{soma = 6})}{n(\\text{soma = 6})} $$ $$$$ Onde, $$$$ $ ~~n(1^\\circ \\text{ dado = 2}) $ é o número de casos favoráveis; $$$$ $ ~~n(\\text{soma = 6}) $ é o número de casos possíveis. $$$$ Existem 5 maneiras de obter uma soma de 6 com o segundo dado: (1,5), (2,4), (3,3), (4,2), (5,1). Em apenas uma dessas, o primeiro dado é 2. Logo: $$$$ $$ P(1^\\circ\\text{ dado = 2 | soma = 6}) = \\frac{1}{5} = 0.2 = 20\\% $$"
+                    }, {
+                        "pe": "Dois dados usuais e não viciados são lançados. Sabe-se que os números observados são ímpares. Então, a probabilidade de que a soma deles seja 8 é:", 
+                        "op": [
+                            {"qu":"2/36", "re": false},
+                            {"qu":"1/6", "re": false}, 
+                            {"qu":"2/9", "re": true}, 
+                            {"qu":"1/4", "re": false}
+                        ],
+                        "res": "Dois dados usuais e não viciados são lançados. Sabendo que os números observados são ímpares, a probabilidade de que a soma deles seja 8 pode ser calculada usando a probabilidade condicional: $$$$ $$ P(\\text{soma = 8 | n}^\\circ \\text{ ímpares}) = \\frac{P(\\text{soma = 8 e n}^\\circ \\text{ ímpares})}{P(\\text{n}^\\circ \\text{ ímpares})} = \\frac{n(\\text{soma = 8 e n}^\\circ \\text{ ímpares})}{n(\\text{n}^\\circ \\text{ ímpares})} $$ $$$$ Onde: $$$$ $ ~~n(\\text{soma = 8 e n}^\\circ \\text{ ímpares}) $ é o número de casos favoráveis e  $$$$ $ ~~n(\\text{n}^\\circ \\text{ ímpares}) $ é o número de casos possíveis. $$$$ Os pares que satisfazem a condição são $$(3, 5) \\text{ e } (5, 3).$$ Logo, há 2 casos favoráveis. $$$$ Já o espaço amostral estará reduzido ao número de combinações dos números ímpares, ou seja, $$(1,1), (1,3), (1,5), (3,1), (3,3), (3,5), (5,1), (5,3), (5,5). $$ Logo, há 9 casos favoráveis. $$$$ Assim, $$  P(\\text{soma = 8  | n}^\\circ \\text{ ímpares}) = \\frac{2}{9} . $$"
+                    }
+            ],
+            "teste2": [
+                {
+                    "pe": "pergunta 1", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": true}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 2", 
+                    "op": [
+                        {"qu":"opção 1", "re": false}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": true}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "pergunta 3", 
+                    "op": [
+                        {"qu":"opção 1", "re": true}, 
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": false}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Inicialmente, há 13 cartas de copas em um total de 52 cartas. Portanto,a probabilidade da primeira extração ser uma carta de copas é $ \\frac{13}{52}$. $$$$ Após a primeira extração, restarão 51 cartas, com 12 sendo de copas. Assim, a probabilidade da segunda extração ser uma carta de copas é $ \\frac{13}{52} \\cdot \\frac{12}{51}  \\approx 5.88\\% $"
+                
+                }, {
+                    "pe": "Dois dados usuais e não viciados são lançados. Sabe-se que os números observados são ímpares. Então, a probabilidade de que a soma deles seja 8 é:", 
+                    "op": [
+                        {"qu":"opção 1", "re": false},
+                        {"qu":"opção 2", "re": false}, 
+                        {"qu":"opção 3", "re": true}, 
+                        {"qu":"opção 4", "re": false}
+                    ],
+                    "res": "Sabendo que os números observados são ímpares, a probabilidade de que a soma deles seja 8 pode ser calculada usando a probabilidade condicional: $$$$ $$ P(\\text{Soma = 8 | Números ímpares}) = \\frac{P(\\text{Soma = 8 e Números ímpares})}{P(\\text{Números ímpares})} = \\frac{n(\\text{Soma = 8 e Números ímpares})}{n(\\text{Números ímpares})} $$ $$$$ Onde: $$~$$ $ \\mathbf{n(\\textbf{Soma = 8 e Números ímpares})} $ é o número de casos favoráveis; $$ $$ $ \\mathrm{n(\\text{Números ímpares})} $ é o número de casos possíveis. $$$$ Os pares que satisfazem a condição são (3, 5) e (5, 3). Logo, há 2 casos favoráveis. Os números ímpares possíveis são (1, 3, 5), (3, 1, 5), (3, 5, 1), (5, 1, 3), (5, 3, 1), totalizando 5 casos possíveis. $$$$ Portanto: $$$$ $$ P(\\text{Soma = 8 | Números ímpares}) = \\frac{2}{5} = 0.4 = 40\\% $$"
+                
+                }
+            ]
+        }
+    }
+    
+]
